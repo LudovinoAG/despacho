@@ -1,0 +1,243 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+html{
+	animation-name: AnimaCabecera;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+}
+
+.encabezado{
+    background: rgb(244,194,9);
+    background: linear-gradient(34deg, rgba(244,194,9,1) 0%, rgba(233,235,10,1) 78%, rgba(255,255,255,1) 96%);
+	padding: 25px;
+	color: black;
+	font-size: 0.9em;
+	box-shadow: 5px 1px 2px 1px black;
+}
+
+.encabezado .info{
+	display: flex;
+	flex-direction: column;
+}
+
+.encabezado .info .nombre_aplicacion{
+	font-size: 1.5em;
+	font-weight: 400;
+}
+
+.encabezado .info .nombre_aplicacion span{
+	color: white;
+	font-weight: bolder;
+}
+
+.encabezado .info .nombre_company{
+	font-size: 0.8em;
+}
+
+.encabezado .logo{
+	width: 60px;
+	box-shadow: 20px 1px 4px 0px black;
+	border: 1px solid white;
+	padding: 4px;
+}
+
+.encabezado .fecha{
+	display: block;
+	font-size: 0.7em;
+	text-align: right;
+	color: goldenrod;
+}
+
+.encabezado .usuario{
+	display: block;
+	font-size: 0.9em;
+	text-align: right;
+	
+}
+
+.menu_bar{
+	width: 100%;
+	margin-top: 5px;
+	background: goldenrod;
+	color: white;
+	font-size: 1em;
+	box-shadow: 5px 1px 2px 1px black;
+}
+
+.menu_bar ul{
+    width: 100%;
+	height: 100%;
+    display: flex;
+    padding-left: 0px;
+}
+
+.menu_bar ul li{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	color: white;
+	font-size: 0.9em;
+	transition: font-size 0.4s ease-out;
+	transition: letter-spacing 0.4s ease-out;
+	letter-spacing: 4px;
+	font-weight: bolder;
+}
+
+
+.menu_bar ul li:hover{
+	background-color: black;
+	font-size: 0.6em;
+	letter-spacing: 0px;
+}
+
+.menu_bar ul li a{
+	text-decoration: none;
+	color: honeydew;
+}
+
+
+.contenido{
+	height: 480px;
+	background-image: url("../pics/fondo2.jpg");
+
+}
+
+.contenido section{
+	background-color: rgba(255, 255, 255, 0.8);
+	height: 480px;
+	border-top: 2px solid goldenrod;
+	padding: 15px;
+	font-size: 1em;
+	box-shadow: 0px 1px 2px 0px black;
+	margin-bottom: 10px;
+}
+
+.cont_inicio{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.cont_inicio .name{
+	letter-spacing: 5px;
+	font-size: 4em;
+	font-weight: bolder;
+}
+
+.cont_inicio .name2{
+	font-weight: bolder;
+	color: goldenrod;
+}
+
+.cont_inicio .descripcion{
+	font-weight: bolder;
+	margin-top: -15px;
+}
+
+.cont_inicio img{
+	width: 200px;
+}
+
+.contenido aside{
+	background-color: rgba(255, 255, 255, 0.8);
+	height: 480px;
+	border-top: 2px solid goldenrod;
+	padding: 15px;
+	font-size: 1em;
+	box-shadow: 0px 1px 2px 0px black;
+	margin-bottom: 10px;
+}
+
+.contenido aside h5{
+	font-weight: bolder;
+	margin-bottom: 20px;
+}
+
+.contenido aside p{
+	text-align: justify;
+}
+
+.contenido aside .import{
+	font-weight: bolder;
+}
+
+.contenido footer{
+	padding-top: 20px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+    background: rgb(244,194,9);
+    background: linear-gradient(34deg, rgba(244,194,9,1) 0%, rgba(233,235,10,1) 78%);
+	color: black;
+	font-size: 1em;
+	box-shadow: 5px 1px 2px 1px black;
+	justify-content: center;
+	align-items: center;
+}
+
+.contenido footer p{
+	margin: 0px;
+	font-size: 0.8em;
+}
+
+.contenido footer .copy{
+	color: goldenrod;
+	font-size: 0.6em;
+	margin: 3px 0px;
+}
+
+.activado{
+	background-color: black;
+}
+
+
+@media screen and (max-width:850px) {
+	.encabezado div{
+		width: 100%;
+		text-align: center;
+	}
+
+	.encabezado .usuario, .encabezado .fecha {
+		width: 100%;
+		text-align: center;
+	}
+
+
+	.menu_bar ul{
+		display: flex;
+		flex-direction: column;
+		font-size: 1em;
+	}
+
+	.encabezado .logo{
+		width: 30%;
+		box-shadow: 20px 1px 4px 0px black;
+		border: 1px solid gray;
+		padding: 4px;
+		margin-bottom: 10px;
+	}
+
+}
+
+@keyframes AnimaCabecera{
+	0%{
+		opacity: 0;
+	}
+
+	100%{
+		opacity: 1;
+		
+	}
+}
+
+
+
+
